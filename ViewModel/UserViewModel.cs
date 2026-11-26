@@ -10,16 +10,8 @@ using System.Windows;
 
 namespace Examen_WPF.ViewModel
 {
-    class UserViewModel : MainPage
+    class UserViewModel
     {
-        public void Button_Click(Object sender, RoutedEventArgs e)
-        {
-            Informe MiVentana = new Informe();
-            MiVentana.Owner = this;
-            MiVentana.ShowDialog();
-        }
-
-
         private ICommand mUpdater;
         public ICommand UpdateCommand
         {

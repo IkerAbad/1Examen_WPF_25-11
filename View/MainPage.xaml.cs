@@ -18,16 +18,23 @@ namespace Examen_WPF.View
     /// <summary>
     /// Lógica de interacción para MainPage.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class MainPage : Window
     {
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void InitializeComponent()
+        private void Informe_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            Informe informe = new Informe();
+            informe.Owner = this;
+            informe.ShowDialog();
+        }
+
+        private void Salir_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }
